@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+app:
+  user:
+    data-file-path: "./users.json" #点和横杠都可以,用点是因为之后方便区分
+    password:
+      min-length: 8
+    username:
+      pattern: "^[a-zA-Z0-9_]{8,16}$"
